@@ -1,0 +1,14 @@
+.input-field {
+  border-radius: 25px;
+  background-color: #E8E8E8;
+  color:#6c757d;
+
+  &:focus{
+    background-color: #E8E8E8;
+    color:#6c757d;
+  }
+
+  ::placeholder{
+    color: #6c757d;
+  }
+}
