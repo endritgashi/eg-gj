@@ -4,9 +4,7 @@ import ProfileNavbar from '../containers/UserProfileNavigation';
 
 const Home = () => {
   return (
-    <>
     <UserProfile />
-    </>
   )
 }
 
