@@ -1,14 +1,16 @@
-import React from 'react'
-import UserProfileHeader from './UserProfileHeader';
-import UserProfileNavigation from './UserProfileNavigation';
-import UserProfileContent from './UserProfileContent';
+import React, { FC } from 'react';
+import UserProfileHeader from '../components/profile/UserProfileHeader';
+import UserProfileNavigation from '../components/profile/UserProfileNavigation';
+import { ProfileProps } from '../interfaces';
 
-const UserProfile = () => {
+const UserProfile: FC<ProfileProps> = ({ address, company, email, name, username, id, phone, website , children}) => {
     return (
         <>
-            <UserProfileHeader />
-            <UserProfileNavigation />
-            <UserProfileContent />
+            <div className='profile-container pt-4'>
+                <UserProfileHeader />
+                <UserProfileNavigation />
+            </div>
+            {children}
         </>
     )
 }

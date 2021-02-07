@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 
-import NavLink from '../components/base/NavLink';
+import NavLink from '../base/NavLink';
 
 const ProfileNavbar = () => {
     const {

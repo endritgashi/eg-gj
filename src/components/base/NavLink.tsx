@@ -1,6 +1,6 @@
-import React, { FC } from 'react';
+import React from 'react';
 import { useRouter } from 'next/router';
-import Link, { LinkProps } from 'next/link';
+import Link from 'next/link';
 
 const NavLink = ({ children, ...props }) => {
     const { asPath } = useRouter();
@@ -8,7 +8,7 @@ const NavLink = ({ children, ...props }) => {
     return (
         <div className="d-flex flex-column">
             <li className="h3 pr-3 pl-3">
-                <Link {...props} href='/'>
+                <Link {...props} href={props.href}>
                     <a className="text-muted">{children}</a>
                 </Link>
             </li>
