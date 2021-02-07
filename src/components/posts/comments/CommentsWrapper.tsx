@@ -1,15 +1,13 @@
-import React from 'react'
+import React, { FC } from 'react'
 import Input from '../../base/Input';
 import CommentsList from '../comments/CommentsList';
+import { CommentsWrapperProps } from '../../../interfaces';
 
-const CommentsWrapper = () => {
+const CommentsWrapper: FC<CommentsWrapperProps> = ({ post }) => {
     return (
         <div className="mr-3">
-           <Input />
-           <div className="d-flex justify-content-center mt-4 border-bottom">
-                <button  type="button" className="bg-white text-muted font-weight-bold mb-3">5 komente</button>
-           </div>
-           <CommentsList />
+            <Input />
+            <CommentsList id={post.id}/>
         </div>
     )
 }

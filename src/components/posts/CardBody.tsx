@@ -1,13 +1,14 @@
-import React from 'react'
+import React, { FC } from 'react'
 import Link from 'next/link';
+import { PostProps } from '../../interfaces';
 
-const CardBody = ({ children }) => {
+const CardBody: FC<PostProps> =  ({ children , post}) => {
     return (
         <div className="card-body">
             <Link href={`/posts/1`}>
-                <a className="post--text">This is title this is title</a>
+                <a className="post--text">{post.title}</a>
             </Link>
-            <p className="post--text text-muted pt-2">This is title this is title This is title this is title This is title this is title This is title this is title</p>
+            <p className="post--text text-muted pt-2">{post.body}</p>
             {children}
         </div>
     )
