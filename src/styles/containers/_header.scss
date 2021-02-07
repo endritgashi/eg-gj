@@ -7,12 +7,12 @@
   font-weight: 700;
 
   &__link {
-    color: #d97706;
+    color: #d97706 !important;
     align-self: center;
     text-decoration: none;
 
     &:hover {
-      color: #d97706;
+      color: #d97706 !important;
     }
   }
 }
