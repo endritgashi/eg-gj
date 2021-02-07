@@ -5,7 +5,7 @@ import { PostProps } from '../../interfaces';
 const CardBody: FC<PostProps> =  ({ children , post}) => {
     return (
         <div className="card-body">
-            <Link href={`/posts/1`}>
+            <Link href={`/posts/${post.id}`}>
                 <a className="post--text">{post.title}</a>
             </Link>
             <p className="post--text text-muted pt-2">{post.body}</p>
