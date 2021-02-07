@@ -1,4 +1,4 @@
-import '../styles/index.css';
+import '../styles/main.scss';
 import { FC } from 'react'
 import { AppProps } from 'next/app';
 
