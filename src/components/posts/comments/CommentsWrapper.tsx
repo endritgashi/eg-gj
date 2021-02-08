@@ -7,7 +7,7 @@ const CommentsWrapper: FC<CommentsWrapperProps> = ({ post, showInput }) => {
     return (
         <div className="mr-3">
             {showInput && <Input />}
-            <CommentsList id={post.id} />
+            <CommentsList id={post.id} showInput={showInput}/>
         </div>
     )
 }

@@ -2,7 +2,6 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 
-
 const NavLink = ({ children, ...props }) => {
     const { asPath } = useRouter();
 
@@ -15,7 +14,7 @@ const NavLink = ({ children, ...props }) => {
             </li>
             {
                 asPath === props.href &&
-                <div style={{ height: '4px', borderTopRightRadius: '5px', borderTopLeftRadius: '5px', backgroundColor: '#d97706' }} />
+                <div  className="navlink__border"/>
             }
 
         </div>

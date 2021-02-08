@@ -6,7 +6,11 @@ import UserPosts from '../../../containers/UserPosts';
 
 const Profile = ({ user }: { user: UserModel }) => {
     return (
-        <Layout>
+        <Layout
+            title="Posts"
+            url={`/profile/${user.id}/posts`}
+            keywords="profile, user, posts, single post, user posts"
+        >
             <UserProfile
                 username={user.username}
                 name={user.name}

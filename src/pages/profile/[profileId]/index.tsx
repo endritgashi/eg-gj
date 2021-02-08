@@ -6,7 +6,11 @@ import UserProfileContent from '../../../components/profile/UserProfileContent';
 
 const Profile = ({ user }: { user: UserModel }) => {
     return (
-        <Layout>
+        <Layout
+            title="Profile"
+            url={`/profile/${user.id}`}
+            keywords="profile, user, posts, single post, user profile"
+        >
             <UserProfile
                 username={user.username}
                 name={user.name}

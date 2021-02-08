@@ -31,7 +31,12 @@ const UserPosts = () => {
   const showMore = () => setShow(show + 1);
 
   return (
-    <>
+    <Layout
+      withHeader={false}
+      title="User Posts"
+      url={`/profile/${profileId}/posts`}
+      keywords="profile, user, posts"
+    >
       <CreatePost />
       {posts.map(
         (el, index) =>
@@ -48,7 +53,7 @@ const UserPosts = () => {
           Shiko më shumë postime
         </button>
       </div>
-    </>
+    </Layout>
   )
 }
 

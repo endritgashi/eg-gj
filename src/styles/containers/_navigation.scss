@@ -10,4 +10,11 @@
   &--default {
     color: #6c757d !important;
   }
+
+  &__border{
+    height: 4px;
+    background-color: #d97706;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
 }

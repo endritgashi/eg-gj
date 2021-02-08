@@ -9,7 +9,7 @@ const CommentListItem: FC<CommentProps> =  ({ comment }) => {
             <h5>{comment.email}</h5>
             <p className="text-muted">{comment.body}</p>
         </div>
-        <ThreeDotsMenu />
+        <ThreeDotsMenu iconClassName="threedots__gray"/>
     </div>
     )
 }

@@ -1,6 +1,12 @@
-.coredropdown {
+.threedots {
     position: relative;
     user-select: none;
+
+    &__gray{
+        color:#787878;
+    }
+
+
     &__menu {
         display: block;
         margin-top: 50px;
@@ -17,6 +23,8 @@
         right: 0;
         // largest possible to be always on top of other content
         z-index: 9999;
+
+    
 
         &__item {
             cursor: pointer;

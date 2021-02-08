@@ -2,7 +2,6 @@ import React from 'react';
 import ContentItem from './ContentItem';
 
 const UserProfileContent = ({ company, address, email, phone, website }) => {
-    console.log(address, "ADDRESS")
     return (
         <section className="container bg-white rounded mt-5 justify-content-center">
             <div className="container w-75 pl-5 pt-3">

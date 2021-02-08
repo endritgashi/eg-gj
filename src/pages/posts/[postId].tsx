@@ -5,7 +5,11 @@ import { PostModel } from '../../model/PostMode.model';
 
 const SinglePost = ({ post }: { post: PostModel }) => {
   return (
-    <Layout>
+    <Layout
+      title={post.title}
+      url={`/posts/${post.id}`}
+      keywords="profile, user, posts, single post"
+    >
       <div className="mb-5">
         <Card post={post} />
       </div>

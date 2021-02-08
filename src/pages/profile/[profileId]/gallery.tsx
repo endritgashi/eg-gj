@@ -30,7 +30,11 @@ const Gallery = ({ user }: { user: UserModel }) => {
     const showMore = () => setShow(show + 12);
 
     return (
-        <Layout>
+        <Layout
+            title="Gallery"
+            url={`/profile/${user.id}/gallery`}
+            keywords="profile, user, posts, single post, gallery, photos images"
+        >
             <UserProfile
                 username={user.username}
                 name={user.name}

@@ -9,12 +9,16 @@ const Home = ({ posts }: { posts: PostModel[] }) => {
   const showMore = () => setPostsNumber(postsNumber + 10);
 
   return (
-    <Layout>
+    <Layout
+      title="Home Page"
+      url="/"
+      keywords="profile, user, posts, home page, landingpage"
+    >
       <CreatePost />
       {posts.map(
         (el, index) =>
           index + 1 <= postsNumber && (
-            <Card key={el.id + el.userId} post={el} showInput/>
+            <Card key={el.id + el.userId} post={el} showInput />
           )
       )}
       <div className="d-flex justify-content-center mt-5 mb-5">

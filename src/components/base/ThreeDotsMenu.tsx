@@ -2,37 +2,36 @@ import React, { useRef } from 'react'
 import cx from 'classnames';
 import useDropdown from '../../hooks/useDropdown/useDropdown';
 
-const ThreeDotsMenu = () => {
+const ThreeDotsMenu = ({ iconClassName = ''}) => {
     const dropdownRef = useRef<HTMLDivElement>(null);
 
     const {
         open,
         handleToggleMenu,
-        handleSelectItem,
     } = useDropdown(2, () => null, dropdownRef);
 
     return (
-        <div className="coredropdown" ref={dropdownRef}>
+        <div className="threedots" ref={dropdownRef}>
             <div
                 role='button'
                 onClick={handleToggleMenu}
                 className={cx(
-                    "coredropdown__trigger",
-                    "coredropdown__trigger--three-dots"
+                    "threedots__trigger",
+                    "threedots__trigger--three-dots"
                 )}
             >
-                <span className="h2">&#8942;</span>
+                <span className={cx("h2",iconClassName)}>&#8942;</span>
             </div>
             {
                 open &&
                 <div
-                    className="coredropdown__menu mt-2"
+                    className="threedots__menu mt-2"
                     tabIndex={-1}
                     role='listbox'
                 >
-                    <div className={cx('coredropdown__menu__item')}>
-                        <span>hhhah</span>
-                    </div>  
+                    <div className={cx('threedots__menu__item')}>
+                        <span>Shpërndaje postimin</span>
+                    </div>
                 </div>
             }
         </div>
