@@ -44,7 +44,7 @@ const CommentsList: FC<CommentsProps> = ({ id }) => {
                             className="general-color bg-white font-weight-bold"
                             onClick={showMore}
                         >
-                            Shiko me shume komente
+                            Shiko më shumë komente
                             </button>
                     </div>
                 )}

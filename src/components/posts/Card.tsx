@@ -25,7 +25,7 @@ const Card : FC<PostProps> = ({ post }) => {
       }, [fetchUser]);
   
     return (
-        <div className="d-flex flex-column ">
+        <div className="d-flex flex-column">
             <div className="post container">
                 <section className="card bg-white shadow-sm">
                     <CardHeader user={user}/>

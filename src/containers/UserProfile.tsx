@@ -1,16 +1,15 @@
 import React, { FC } from 'react';
 import UserProfileHeader from '../components/profile/UserProfileHeader';
 import UserProfileNavigation from '../components/profile/UserProfileNavigation';
-import { ProfileProps } from '../interfaces';
 
-const UserProfile: FC<ProfileProps> = ({ address, company, email, name, username, id, phone, website , children}) => {
+const UserProfile = ({  name = '', username = '', children }) => {
     return (
         <>
-            <div className='profile-container pt-4'>
-                <UserProfileHeader />
+            <div className='profile-container pt-1'>
+                <UserProfileHeader name={name} username={username}/>
                 <UserProfileNavigation />
             </div>
-            {children}
+            {children || ''}
         </>
     )
 }

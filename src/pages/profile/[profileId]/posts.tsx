@@ -6,21 +6,14 @@ import UserProfileContent from '../../../components/profile/UserProfileContent';
 import UserPosts from '../../../containers/UserPosts';
 
 const Profile = ({ user }: { user: UserModel }) => {
-    console.log(user, "In profile")
     return (
         <Layout>
-            <UserProfile 
-                company={user.company}
-                address={user.address}
-                email={user.email}
+            <UserProfile
                 username={user.username}
-                phone={user.phone}
-                website={user.website}
-                id={user.id}
                 name={user.name}
-                >
-                    <UserPosts name="name" username="username"/>
-                </UserProfile>
+            >
+                <UserPosts />
+            </UserProfile>
         </Layout>
     )
 }
