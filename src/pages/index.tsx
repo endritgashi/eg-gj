@@ -14,7 +14,7 @@ const Home = ({ posts }: { posts: PostModel[] }) => {
       {posts.map(
         (el, index) =>
           index + 1 <= postsNumber && (
-            <Card key={el.id + el.userId} post={el} />
+            <Card key={el.id + el.userId} post={el} showInput/>
           )
       )}
       <div className="d-flex justify-content-center mt-5 mb-5">

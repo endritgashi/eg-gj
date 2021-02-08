@@ -36,7 +36,7 @@ const UserPosts = () => {
       {posts.map(
         (el, index) =>
           index + 1 <= show && (
-            <Card key={el.id + el.userId} post={el} />
+            <Card key={el.id + el.userId} post={el} showInput={false} />
           )
       )}
       <div className="d-flex justify-content-center mt-5 mb-5">

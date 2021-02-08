@@ -4,7 +4,7 @@ import CardBody from './CardBody';
 import CommentsWrapper from './comments/CommentsWrapper';
 import { PostProps, UserProps } from '../../interfaces';
 
-const Card : FC<PostProps> = ({ post }) => {
+const Card : FC<PostProps> = ({ post, showInput}) => {
     const [user, setUser] = useState<UserProps>({
         name: '',
         username: ''
@@ -30,7 +30,7 @@ const Card : FC<PostProps> = ({ post }) => {
                 <section className="card bg-white shadow-sm">
                     <CardHeader user={user}/>
                     <CardBody post={post}>
-                        <CommentsWrapper post={post} />
+                        <CommentsWrapper post={post} showInput={showInput}/>
                     </CardBody>
                 </section>
             </div>
