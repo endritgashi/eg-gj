@@ -3,11 +3,11 @@ import Input from '../../base/Input';
 import CommentsList from '../comments/CommentsList';
 import { CommentsWrapperProps } from '../../../interfaces';
 
-const CommentsWrapper: FC<CommentsWrapperProps> = ({ post }) => {
+const CommentsWrapper: FC<CommentsWrapperProps> = ({ post, showInput }) => {
     return (
         <div className="mr-3">
-            <Input />
-            <CommentsList id={post.id}/>
+            {showInput && <Input />}
+            <CommentsList id={post.id} />
         </div>
     )
 }

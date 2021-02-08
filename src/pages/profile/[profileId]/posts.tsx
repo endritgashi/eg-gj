@@ -2,7 +2,6 @@ import React from 'react';
 import Layout from '../../../containers/Layout';
 import UserProfile from '../../../containers/UserProfile';
 import { UserModel } from '../../../model';
-import UserProfileContent from '../../../components/profile/UserProfileContent';
 import UserPosts from '../../../containers/UserPosts';
 
 const Profile = ({ user }: { user: UserModel }) => {
