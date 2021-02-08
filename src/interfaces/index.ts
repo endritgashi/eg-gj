@@ -5,4 +5,3 @@ export * from './CommentsWrapper.types';
 export * from './CommentsList.types';
 export * from './Comment.types';
 export * from './Profile.types';
-export * from './UserPosts.types';

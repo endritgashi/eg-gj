@@ -5,21 +5,20 @@ import { UserModel } from '../../../model';
 import UserProfileContent from '../../../components/profile/UserProfileContent';
 
 const Profile = ({ user }: { user: UserModel }) => {
-    console.log(user, "In profile")
     return (
         <Layout>
-            <UserProfile 
-                company={user.company}
-                address={user.address}
-                email={user.email}
+            <UserProfile
                 username={user.username}
-                phone={user.phone}
-                website={user.website}
-                id={user.id}
                 name={user.name}
-                >
-                    <UserProfileContent />
-                </UserProfile>
+            >
+                <UserProfileContent
+                    company={user.company}
+                    address={user.address}
+                    email={user.email}
+                    phone={user.phone}
+                    website={user.website}
+                />
+            </UserProfile>
         </Layout>
     )
 }

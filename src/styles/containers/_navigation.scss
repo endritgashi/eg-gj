@@ -1,3 +1,13 @@
-.nav-list{
-    width: 50%;   
+.nav-list {
+  width: 50%;
+}
+
+.navlink {
+  &--active {
+    color: #d97706 !important;
+  }
+
+  &--default {
+    color: #6c757d !important;
+  }
 }

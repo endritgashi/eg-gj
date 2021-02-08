@@ -3,7 +3,6 @@ body {
   min-height: 100vh;
 }
 
-
 a:link {
   text-decoration: none;
   color: black;
@@ -24,7 +23,7 @@ a:active {
   color: black;
 }
 
-button{
+button {
   border: none;
   outline: none;
 }
@@ -43,16 +42,22 @@ ul {
   list-style-type: none;
 }
 
-a{
+a {
   color: black;
 }
 
-.avatar{
-  background-color: #E8E8E8;
+.avatar {
+  background-color: #e8e8e8;
   width: 50px;
   height: 50px;
 }
 
-.general-color{
-    color: #d97706;
+.general-color {
+  color: #d97706;
+}
+
+.view-more {
+  background-color: #bebebe;
+  color: #787878;
+  outline: none;
 }

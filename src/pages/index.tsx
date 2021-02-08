@@ -20,7 +20,7 @@ const Home = ({ posts }: { posts: PostModel[] }) => {
       <div className="d-flex justify-content-center mt-5 mb-5">
         <button
           type="button"
-          className="btn btn-secondary rounded btn-lg text-dark"
+          className="view-more rounded btn-lg"
           onClick={showMore}
         >
           Shiko më shumë postime
